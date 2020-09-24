@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>3D Productor editor</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:500,700&display=swap" rel="stylesheet">
+</head>
+<body>  
+  <canvas id="c"></canvas>
+
+  <div class="sidebar">
+    <div class="sidebar__header">
+      <div class="logo">
+        <img src="assets/img/logo-vector.svg" alt="logo">
+      </div>
+      <h2>fast editor</h2>
+    </div>
+
+    <div class="sidebar__control-elements" id="control-elements">
+      <ul class="options">
+        <li class="option">
+          <button value="legs" class="--is-active">
+            <span class="copy">legs</span>
+            <div class="icon-indicator">
+              <div class="icon-indicator__content">
+                <img src="assets/img/check.svg" alt="" class="icon">
+                <img src="assets/img/dash.svg" alt="" class="icon">
+              </div>
+            </div>
+          </button>
+        </li>
+        <li class="option">
+          <button value="cushions">
+            <span class="copy">cushions</span>
+            <div class="icon-indicator">
+              <div class="icon-indicator__content">
+                <img src="assets/img/check.svg" alt="" class="icon">
+                <img src="assets/img/dash.svg" alt="" class="icon">
+              </div>
+            </div>
+          </button>
+        </li>
+        <li class="option">
+          <button value="base">
+            <span class="copy">base</span> 
+            <div class="icon-indicator">
+              <div class="icon-indicator__content">
+                <img src="assets/img/check.svg" alt="" class="icon">
+                <img src="assets/img/dash.svg" alt="" class="icon">
+              </div>
+            </div>
+          </button>
+        </li>
+        <li class="option">
+          <button value="supports">
+            <span class="copy">supports</span>
+            <div class="icon-indicator">
+              <div class="icon-indicator__content">
+                <img src="assets/img/check.svg" alt="" class="icon">
+                <img src="assets/img/dash.svg" alt="" class="icon">
+              </div>
+            </div>
+          </button>
+        </li>
+        <li class="option">
+          <button value="back">
+            <span class="copy">back</span>
+            <div class="icon-indicator">
+              <div class="icon-indicator__content">
+                <img src="assets/img/check.svg" alt="" class="icon">
+                <img src="assets/img/dash.svg" alt="" class="icon">
+              </div>
+            </div>
+          </button>
+        </li>
+      </ul>
+    </div>
+
+    <div class="sidebar__divider"></div>
+    
+    <div class="sidebar__control-colors">
+      <div class="options" id="color-options">
+        <template id="color-option-template">
+          <div class="option">
+            <button data-key="0">
+              <div class="circle">
+                <img class="icon" src="assets/img/check-white.svg" alt="">
+              </div>
+            </button>
+          </div>
+        </template>
+      </div>
+    </div>
+  </div>
+
+  <div class="instructions">
+    <span>
+      <img src="assets/img/touch.svg" alt="" class="icon">
+      <b>Grab</b> to rotate. <b>Scroll</b> to zoom
+    </span>
+  </div>
+</body>
+</html>
